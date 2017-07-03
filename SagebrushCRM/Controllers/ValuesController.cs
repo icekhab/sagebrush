@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Sugebrush.ORM;
+using Sagebrush.DbModels.Users;
 
 namespace SagebrushCRM.Controllers
 {
@@ -11,9 +13,11 @@ namespace SagebrushCRM.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<SUser> Get()
         {
-            return new string[] { "value1", "value2" };
+            var queries = new TestQuery();
+            var list = queries.GetUsers();
+            return list;
         }
 
         // GET api/values/5

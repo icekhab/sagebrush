@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SagebrushCRM", "SagebrushCR
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ORM", "ORM", "{05A46D10-CF8A-4861-9DD0-3FB5442F9488}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sugebrush.ORM", "Sugebrush.ORM\Sugebrush.ORM.csproj", "{F62322A7-350F-4CF4-9E35-DD70932AB8B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sugebrush.ORM", "Sugebrush.ORM\Sugebrush.ORM.csproj", "{F62322A7-350F-4CF4-9E35-DD70932AB8B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{7152B26E-6864-47FA-A64F-E07C9D443F92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sagebrush.DbModels", "Sagebrush.DbModels\Sagebrush.DbModels.csproj", "{4648B295-3DCC-49BA-8A28-7552410338E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sagebrush.DbModels", "Sagebrush.DbModels\Sagebrush.DbModels.csproj", "{4648B295-3DCC-49BA-8A28-7552410338E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sagebush.ORM.Tests", "Sagebush.ORM.Tests\Sagebush.ORM.Tests.csproj", "{E21CFC8B-F9A7-46AB-9E7F-CDB59EBAE6D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{4648B295-3DCC-49BA-8A28-7552410338E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4648B295-3DCC-49BA-8A28-7552410338E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4648B295-3DCC-49BA-8A28-7552410338E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21CFC8B-F9A7-46AB-9E7F-CDB59EBAE6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21CFC8B-F9A7-46AB-9E7F-CDB59EBAE6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21CFC8B-F9A7-46AB-9E7F-CDB59EBAE6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21CFC8B-F9A7-46AB-9E7F-CDB59EBAE6D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +44,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F62322A7-350F-4CF4-9E35-DD70932AB8B5} = {05A46D10-CF8A-4861-9DD0-3FB5442F9488}
 		{4648B295-3DCC-49BA-8A28-7552410338E4} = {7152B26E-6864-47FA-A64F-E07C9D443F92}
+		{E21CFC8B-F9A7-46AB-9E7F-CDB59EBAE6D5} = {05A46D10-CF8A-4861-9DD0-3FB5442F9488}
 	EndGlobalSection
 EndGlobal

@@ -10,9 +10,11 @@ namespace Sugebrush.ORM
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         private string _connectionString;
+        private string _tableName;
 
         public Repository(string connectionString)
         {
+            _tableName = typeof(T).Name;
             _connectionString = connectionString;
         }
 
@@ -26,14 +28,13 @@ namespace Sugebrush.ORM
             using (var db = new NpgsqlConnection(_connectionString))
             {
                 db.Open();
-            
-                var tableName = typeof(T).Name;
-                var query = $"SELECT * FROM public.{tableName}";
+
+                var query = $"SELECT * FROM public.{_tableName}";
                 var result = db.Query<T>(query).ToList();
 
                 db.Close();
 
-                return result; 
+                return result;
             }
         }
     }

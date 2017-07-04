@@ -26,9 +26,9 @@ namespace Sugebrush.ORM
             using (var db = new NpgsqlConnection(_connectionString))
             {
                 db.Open();
-
-                // TODO: Get table from T type name or ...
-                var query = "SELECT * FROM public.suser";
+            
+                var tableName = typeof(T).Name;
+                var query = $"SELECT * FROM public.{tableName}";
                 var result = db.Query<T>(query).ToList();
 
                 db.Close();
